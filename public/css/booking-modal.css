@@ -159,6 +159,221 @@
     min-height: 300px;
 }
 
+/* Simple Booking Modal Styles */
+.booking-modal-simple {
+    max-width: 700px;
+    width: 90%;
+}
+
+.booking-redirect-content {
+    padding: 30px;
+}
+
+.booking-info {
+    margin-bottom: 30px;
+}
+
+.business-info {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 25px;
+    background: linear-gradient(135deg, #f9f6f1, #f5f2ed);
+    border-radius: 12px;
+    border: 1px solid #eee;
+}
+
+.business-info h3 {
+    color: #C2A74E;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.business-info p {
+    margin: 8px 0;
+    color: #333;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.business-info i {
+    color: #C2A74E;
+    width: 20px;
+    text-align: center;
+}
+
+.services-preview {
+    margin-bottom: 25px;
+}
+
+.services-preview h4 {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+
+.services-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+.services-list li:last-child {
+    border-bottom: none;
+}
+
+.services-list li:hover {
+    background-color: #f9f6f1;
+}
+
+.service-name {
+    color: #333;
+    font-weight: 500;
+}
+
+.service-price {
+    color: #C2A74E;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.more-services {
+    justify-content: center;
+    font-style: italic;
+    color: #666;
+    text-align: center;
+    background-color: #f9f6f1;
+}
+
+.booking-hours h4 {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.hours-grid {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+
+.day-hours {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.day-hours:last-child {
+    border-bottom: none;
+}
+
+.day-hours.closed {
+    background-color: #f8f8f8;
+    color: #999;
+}
+
+.day {
+    font-weight: 600;
+    color: #333;
+}
+
+.hours {
+    color: #666;
+}
+
+.booking-actions {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.booking-btn {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.booking-btn i {
+    font-size: 18px;
+}
+
+.popup-booking {
+    background: linear-gradient(135deg, #C2A74E, #B69D49);
+    border: none;
+    color: white;
+    box-shadow: 0 4px 15px rgba(194, 167, 78, 0.3);
+}
+
+.popup-booking:hover {
+    background: linear-gradient(135deg, #B69D49, #A89142);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(194, 167, 78, 0.4);
+}
+
+.direct-booking {
+    background: linear-gradient(135deg, #183425, #0F2219);
+    border: none;
+    color: white;
+    box-shadow: 0 4px 15px rgba(24, 52, 37, 0.3);
+}
+
+.direct-booking:hover {
+    background: linear-gradient(135deg, #0F2219, #0A1712);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(24, 52, 37, 0.4);
+}
+
+.booking-note {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f0f8ff;
+    border: 1px solid #b3d9ff;
+    border-radius: 8px;
+    color: #0066cc;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.booking-note i {
+    color: #0066cc;
+}
+
 .step-content h3 {
     margin: 0 0 25px 0;
     color: #333;
@@ -421,6 +636,56 @@ textarea.form-control {
         max-height: 95vh;
     }
     
+    .booking-modal-simple {
+        width: 95%;
+        max-width: 95%;
+    }
+    
+    .booking-redirect-content {
+        padding: 20px;
+    }
+    
+    .business-info {
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+    
+    .business-info h3 {
+        font-size: 24px;
+    }
+    
+    .business-info p {
+        font-size: 14px;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .business-info i {
+        margin-bottom: 5px;
+    }
+    
+    .services-list li {
+        padding: 10px 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .service-price {
+        align-self: flex-end;
+        font-size: 14px;
+    }
+    
+    .day-hours {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    
+    .booking-btn {
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+    
     .booking-modal-header,
     .booking-modal-content,
     .booking-modal-footer {
@@ -458,8 +723,67 @@ textarea.form-control {
 }
 
 @media (max-width: 480px) {
-    .booking-modal-header h2 {
+    .booking-modal-simple {
+        width: 98%;
+        max-width: 98%;
+        margin: 5px;
+    }
+    
+    .booking-redirect-content {
+        padding: 15px;
+    }
+    
+    .business-info {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .business-info h3 {
         font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .business-info p {
+        font-size: 13px;
+    }
+    
+    .services-preview h4,
+    .booking-hours h4 {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    
+    .services-list li {
+        padding: 8px 12px;
+    }
+    
+    .service-name {
+        font-size: 14px;
+    }
+    
+    .day-hours {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+    
+    .booking-btn {
+        padding: 12px 15px;
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+    
+    .booking-note {
+        padding: 12px;
+        font-size: 13px;
+        margin-top: 15px;
+    }
+    
+    .booking-modal-header {
+        padding: 15px 20px;
+    }
+    
+    .booking-modal-header h2 {
+        font-size: 18px;
     }
     
     .step-content h3 {

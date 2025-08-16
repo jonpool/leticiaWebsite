@@ -1,86 +1,39 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { createPortal } from 'react-dom';
 
 const BookingModal = ({ isOpen, onClose }) => {
-    const [currentStep, setCurrentStep] = useState(1);
-    const [formData, setFormData] = useState({
-        service: '',
-        date: '',
-        time: '',
-        name: '',
-        email: '',
-        phone: '',
-        notes: ''
-    });
+    // Square booking page URL
+    const squareBookingUrl = "https://square.site/book/79XW5EWWEYYTR/brows-by-leticia-melrose-ma";
 
-    const services = [
-        { id: 'haircut', name: 'Hair Cut & Styling', price: '$50', duration: '1 hour' },
-        { id: 'facial', name: 'Facial Treatment', price: '$80', duration: '1.5 hours' },
-        { id: 'massage', name: 'Relaxing Massage', price: '$100', duration: '1 hour' },
-        { id: 'manicure', name: 'Manicure & Pedicure', price: '$60', duration: '1.5 hours' },
-        { id: 'coloring', name: 'Hair Coloring', price: '$120', duration: '2 hours' },
-        { id: 'spa-package', name: 'Full Spa Package', price: '$200', duration: '3 hours' }
-    ];
-
-    const timeSlots = [
-        '9:00 AM', '10:00 AM', '11:00 AM', '12:00 PM',
-        '1:00 PM', '2:00 PM', '3:00 PM', '4:00 PM', '5:00 PM'
-    ];
-
-    const handleInputChange = (field, value) => {
-        setFormData({ ...formData, [field]: value });
-    };
-
-    const handleNext = () => {
-        if (currentStep < 4) {
-            setCurrentStep(currentStep + 1);
+    const openBookingInNewWindow = () => {
+        // Open Square booking in a new popup window
+        const popup = window.open(
+            squareBookingUrl,
+            'squareBooking',
+            'width=800,height=800,scrollbars=yes,resizable=yes,toolbar=no,menubar=no,location=no,status=no'
+        );
+        
+        if (popup) {
+            popup.focus();
+            onClose(); // Close the modal after opening the booking window
+        } else {
+            // Fallback if popup is blocked
+            window.open(squareBookingUrl, '_blank');
+            onClose();
         }
     };
 
-    const handlePrevious = () => {
-        if (currentStep > 1) {
-            setCurrentStep(currentStep - 1);
-        }
-    };
-
-    const handleSubmit = () => {
-        // Here you would typically send the booking data to your backend
-        console.log('Booking submitted:', formData);
-        alert('Booking submitted successfully! We will contact you shortly to confirm your appointment.');
+    const openBookingDirect = () => {
+        // Direct link for mobile or if popup doesn't work
+        window.open(squareBookingUrl, '_blank');
         onClose();
-        // Reset form
-        setFormData({
-            service: '',
-            date: '',
-            time: '',
-            name: '',
-            email: '',
-            phone: '',
-            notes: ''
-        });
-        setCurrentStep(1);
-    };
-
-    const isStepValid = () => {
-        switch (currentStep) {
-            case 1:
-                return formData.service;
-            case 2:
-                return formData.date && formData.time;
-            case 3:
-                return formData.name && formData.email && formData.phone;
-            case 4:
-                return true;
-            default:
-                return false;
-        }
     };
 
     if (!isOpen) return null;
 
     const modalContent = (
         <div className="booking-modal-overlay" style={{zIndex: '99999999'}} onClick={onClose}>
-            <div className="booking-modal" onClick={(e) => e.stopPropagation()}>
+            <div className="booking-modal booking-modal-simple" onClick={(e) => e.stopPropagation()}>
                 <div className="booking-modal-header">
                     <h2>Book Your Appointment</h2>
                     <button className="close-btn" onClick={onClose}>
@@ -88,195 +41,96 @@ const BookingModal = ({ isOpen, onClose }) => {
                     </button>
                 </div>
 
-                <div className="booking-steps">
-                    <div className={`step ${currentStep >= 1 ? 'active' : ''} ${currentStep > 1 ? 'completed' : ''}`}>
-                        <span className="step-number">1</span>
-                        <span className="step-title">Service</span>
-                    </div>
-                    <div className={`step ${currentStep >= 2 ? 'active' : ''} ${currentStep > 2 ? 'completed' : ''}`}>
-                        <span className="step-number">2</span>
-                        <span className="step-title">Date & Time</span>
-                    </div>
-                    <div className={`step ${currentStep >= 3 ? 'active' : ''} ${currentStep > 3 ? 'completed' : ''}`}>
-                        <span className="step-number">3</span>
-                        <span className="step-title">Details</span>
-                    </div>
-                    <div className={`step ${currentStep >= 4 ? 'active' : ''} ${currentStep > 4 ? 'completed' : ''}`}>
-                        <span className="step-number">4</span>
-                        <span className="step-title">Confirm</span>
-                    </div>
-                </div>
-
-                <div className="booking-modal-content">
-                    {/* Step 1: Service Selection */}
-                    {currentStep === 1 && (
-                        <div className="step-content">
-                            <h3>Choose Your Service</h3>
-                            <div className="services-grid">
-                                {services.map((service) => (
-                                    <div 
-                                        key={service.id}
-                                        className={`service-card ${formData.service === service.id ? 'selected' : ''}`}
-                                        onClick={() => handleInputChange('service', service.id)}
-                                    >
-                                        <h4>{service.name}</h4>
-                                        <p className="price">{service.price}</p>
-                                        <p className="duration">{service.duration}</p>
-                                    </div>
-                                ))}
-                            </div>
+                <div className="booking-modal-content booking-redirect-content">
+                    <div className="booking-info">
+                        <div className="business-info">
+                            <h3>Brows By Leticia</h3>
+                            <p className="address">
+                                <i className="fas fa-map-marker-alt"></i>
+                                527 Main St, Melrose - Second floor, room 8
+                            </p>
+                            <p className="phone">
+                                <i className="fas fa-phone"></i>
+                                (857) 888-6973
+                            </p>
+                            <p className="email">
+                                <i className="fas fa-envelope"></i>
+                                lp.designmakeup@gmail.com
+                            </p>
                         </div>
-                    )}
 
-                    {/* Step 2: Date & Time Selection */}
-                    {currentStep === 2 && (
-                        <div className="step-content">
-                            <h3>Select Date & Time</h3>
-                            <div className="datetime-section">
-                                <div className="date-selection">
-                                    <label>Choose Date:</label>
-                                    <input 
-                                        type="date" 
-                                        value={formData.date}
-                                        min={new Date().toISOString().split('T')[0]}
-                                        onChange={(e) => handleInputChange('date', e.target.value)}
-                                        className="form-control"
-                                    />
+                        <div className="services-preview">
+                            <h4>Available Services:</h4>
+                            <ul className="services-list">
+                                <li>
+                                    <span className="service-name">Eyebrow Design (waxing)</span>
+                                    <span className="service-price">$35</span>
+                                </li>
+                                <li>
+                                    <span className="service-name">Eyebrow Design + (henna or tint)</span>
+                                    <span className="service-price">$50</span>
+                                </li>
+                                <li>
+                                    <span className="service-name">Brow Lamination</span>
+                                    <span className="service-price">$75</span>
+                                </li>
+                                <li>
+                                    <span className="service-name">Brow Lamination + Tint</span>
+                                    <span className="service-price">$95</span>
+                                </li>
+                                <li>
+                                    <span className="service-name">Hidragloss 💋</span>
+                                    <span className="service-price">$70</span>
+                                </li>
+                                <li className="more-services">+ More services available</li>
+                            </ul>
+                        </div>
+
+                        <div className="booking-hours">
+                            <h4>Business Hours:</h4>
+                            <div className="hours-grid">
+                                <div className="day-hours">
+                                    <span className="day">Tue - Wed:</span>
+                                    <span className="hours">8:00 AM - 7:00 PM</span>
                                 </div>
-                                <div className="time-selection">
-                                    <label>Choose Time:</label>
-                                    <div className="time-slots">
-                                        {timeSlots.map((time) => (
-                                            <button
-                                                key={time}
-                                                className={`time-slot ${formData.time === time ? 'selected' : ''}`}
-                                                onClick={() => handleInputChange('time', time)}
-                                            >
-                                                {time}
-                                            </button>
-                                        ))}
-                                    </div>
+                                <div className="day-hours">
+                                    <span className="day">Thu:</span>
+                                    <span className="hours">8:00 AM - 6:00 PM</span>
+                                </div>
+                                <div className="day-hours">
+                                    <span className="day">Fri - Sat:</span>
+                                    <span className="hours">8:00 AM - 5:00 PM</span>
+                                </div>
+                                <div className="day-hours closed">
+                                    <span className="day">Sun - Mon:</span>
+                                    <span className="hours">Closed</span>
                                 </div>
                             </div>
                         </div>
-                    )}
+                    </div>
 
-                    {/* Step 3: Personal Details */}
-                    {currentStep === 3 && (
-                        <div className="step-content">
-                            <h3>Your Information</h3>
-                            <div className="form-fields">
-                                <div className="form-group">
-                                    <label>Full Name *</label>
-                                    <input 
-                                        type="text" 
-                                        value={formData.name}
-                                        onChange={(e) => handleInputChange('name', e.target.value)}
-                                        className="form-control"
-                                        placeholder="Enter your full name"
-                                    />
-                                </div>
-                                <div className="form-group">
-                                    <label>Email *</label>
-                                    <input 
-                                        type="email" 
-                                        value={formData.email}
-                                        onChange={(e) => handleInputChange('email', e.target.value)}
-                                        className="form-control"
-                                        placeholder="Enter your email"
-                                    />
-                                </div>
-                                <div className="form-group">
-                                    <label>Phone Number *</label>
-                                    <input 
-                                        type="tel" 
-                                        value={formData.phone}
-                                        onChange={(e) => handleInputChange('phone', e.target.value)}
-                                        className="form-control"
-                                        placeholder="Enter your phone number"
-                                    />
-                                </div>
-                                <div className="form-group">
-                                    <label>Special Notes (Optional)</label>
-                                    <textarea 
-                                        value={formData.notes}
-                                        onChange={(e) => handleInputChange('notes', e.target.value)}
-                                        className="form-control"
-                                        placeholder="Any special requests or notes..."
-                                        rows="3"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    )}
-
-                    {/* Step 4: Confirmation */}
-                    {currentStep === 4 && (
-                        <div className="step-content">
-                            <h3>Confirm Your Booking</h3>
-                            <div className="booking-summary">
-                                <div className="summary-item">
-                                    <strong>Service:</strong>
-                                    <span>{services.find(s => s.id === formData.service)?.name}</span>
-                                </div>
-                                <div className="summary-item">
-                                    <strong>Price:</strong>
-                                    <span>{services.find(s => s.id === formData.service)?.price}</span>
-                                </div>
-                                <div className="summary-item">
-                                    <strong>Duration:</strong>
-                                    <span>{services.find(s => s.id === formData.service)?.duration}</span>
-                                </div>
-                                <div className="summary-item">
-                                    <strong>Date:</strong>
-                                    <span>{new Date(formData.date).toLocaleDateString()}</span>
-                                </div>
-                                <div className="summary-item">
-                                    <strong>Time:</strong>
-                                    <span>{formData.time}</span>
-                                </div>
-                                <div className="summary-item">
-                                    <strong>Name:</strong>
-                                    <span>{formData.name}</span>
-                                </div>
-                                <div className="summary-item">
-                                    <strong>Email:</strong>
-                                    <span>{formData.email}</span>
-                                </div>
-                                <div className="summary-item">
-                                    <strong>Phone:</strong>
-                                    <span>{formData.phone}</span>
-                                </div>
-                                {formData.notes && (
-                                    <div className="summary-item">
-                                        <strong>Notes:</strong>
-                                        <span>{formData.notes}</span>
-                                    </div>
-                                )}
-                            </div>
-                        </div>
-                    )}
-                </div>
-
-                <div className="booking-modal-footer">
-                    {currentStep > 1 && (
-                        <button className="btn btn-secondary" onClick={handlePrevious}>
-                            Previous
-                        </button>
-                    )}
-                    {currentStep < 4 ? (
+                    <div className="booking-actions">
                         <button 
-                            className={`btn btn-primary ${!isStepValid() ? 'disabled' : ''}`}
-                            onClick={handleNext}
-                            disabled={!isStepValid()}
+                            className="btn btn-primary booking-btn popup-booking"
+                            onClick={openBookingInNewWindow}
                         >
-                            Next
+                            <i className="fas fa-calendar-check"></i>
+                            Book Appointment (Popup)
                         </button>
-                    ) : (
-                        <button className="btn btn-success" onClick={handleSubmit}>
-                            Confirm Booking
+                        
+                        <button 
+                            className="btn btn-secondary booking-btn direct-booking"
+                            onClick={openBookingDirect}
+                        >
+                            <i className="fas fa-external-link-alt"></i>
+                            Open Booking Page
                         </button>
-                    )}
+                        
+                        <p className="booking-note">
+                            <i className="fas fa-info-circle"></i>
+                            You'll be redirected to our secure Square booking system
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

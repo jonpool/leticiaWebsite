@@ -8,7 +8,7 @@ const Pricing8 = () => {
               <div className="sec-title text-center">
                 <figure className="image"><img src="images/icons/icon1.png" alt="Image"/></figure>
                 <span className="sub-title">Price</span>
-                <h2 className="words-slide-up text-split">Spa Treatments With <br/>Pricing</h2>
+                <h2 className="words-slide-up text-split">Brows By Leticia <br/>Services & Pricing</h2>
               </div>
               <div className="row">
                 <div className="pricing-block-three col-lg-6">
@@ -20,10 +20,10 @@ const Pricing8 = () => {
                     </div>
                     <div className="content-box">
                       <div className="inner">
-                        <h4 className="title"><Link href="page-pricing">FACE RELAX MASSAGE</Link></h4>
-                        <div className="text">10 – 100 minute session</div>
+                        <h4 className="title"><Link href="page-pricing">EYEBROW DESIGN (WAXING)</Link></h4>
+                        <div className="text">Professional eyebrow shaping with wax</div>
                       </div>
-                      <span className="price">$89.00</span>
+                      <span className="price">$35.00</span>
                     </div>
                   </div>
                 </div>
@@ -36,10 +36,10 @@ const Pricing8 = () => {
                     </div>
                     <div className="content-box">
                       <div className="inner">
-                        <h4 className="title"><Link href="page-pricing">FACE RELAX MASSAGE</Link></h4>
-                        <div className="text">10 – 100 minute session</div>
+                        <h4 className="title"><Link href="page-pricing">EYEBROW DESIGN + (HENNA OR TINT)</Link></h4>
+                        <div className="text">Eyebrow shaping with color enhancement</div>
                       </div>
-                      <span className="price">$89.00</span>
+                      <span className="price">$50.00</span>
                     </div>
                   </div>
                 </div>
@@ -52,10 +52,10 @@ const Pricing8 = () => {
                     </div>
                     <div className="content-box">
                       <div className="inner">
-                        <h4 className="title"><Link href="page-pricing">FACE RELAX MASSAGE</Link></h4>
-                        <div className="text">10 – 100 minute session</div>
+                        <h4 className="title"><Link href="page-pricing">BROW LAMINATION</Link></h4>
+                        <div className="text">Transform your brows with lamination treatment</div>
                       </div>
-                      <span className="price">$89.00</span>
+                      <span className="price">$75.00</span>
                     </div>
                   </div>
                 </div>
@@ -68,10 +68,10 @@ const Pricing8 = () => {
                     </div>
                     <div className="content-box">
                       <div className="inner">
-                        <h4 className="title"><Link href="page-pricing">FACE RELAX MASSAGE</Link></h4>
-                        <div className="text">10 – 100 minute session</div>
+                        <h4 className="title"><Link href="page-pricing">BROW LAMINATION + TINT</Link></h4>
+                        <div className="text">Lamination with color enhancement</div>
                       </div>
-                      <span className="price">$89.00</span>
+                      <span className="price">$95.00</span>
                     </div>
                   </div>
                 </div>
@@ -84,10 +84,10 @@ const Pricing8 = () => {
                     </div>
                     <div className="content-box">
                       <div className="inner">
-                        <h4 className="title"><Link href="page-pricing">FACE RELAX MASSAGE</Link></h4>
-                        <div className="text">10 – 100 minute session</div>
+                        <h4 className="title"><Link href="page-pricing">HIDRAGLOSS 💋</Link></h4>
+                        <div className="text">Luxurious lip hydration and glossing treatment</div>
                       </div>
-                      <span className="price">$89.00</span>
+                      <span className="price">$70.00</span>
                     </div>
                   </div>
                 </div>
@@ -100,10 +100,10 @@ const Pricing8 = () => {
                     </div>
                     <div className="content-box">
                       <div className="inner">
-                        <h4 className="title"><Link href="page-pricing">FACE RELAX MASSAGE</Link></h4>
-                        <div className="text">10 – 100 minute session</div>
+                        <h4 className="title"><Link href="page-pricing">FULL FACE WAXING</Link></h4>
+                        <div className="text">Complete facial hair removal service</div>
                       </div>
-                      <span className="price">$89.00</span>
+                      <span className="price">$25.00</span>
                     </div>
                   </div>
                 </div>

@@ -11,7 +11,7 @@ const Services2 = () => {
                     <div className="sec-title text-center">
                         <figure className="image"><img src="images/icons/icon1.png" alt="Image"/></figure>
                         <span className="sub-title">What We Do</span>
-                        <h2 className="words-slide-up text-split">Our Services</h2>
+                        <h2 className="words-slide-up text-split">Brows By Leticia Services</h2>
                     </div>
                     <div className="row">
     
@@ -22,8 +22,8 @@ const Services2 = () => {
                                 <div className="content-box-hover">                                
                                     <div className="content-box">
                                         <img className="icon" src="images/icons/theme-icon1.png" alt="icon"/>
-                                        <h3 className="title"><Link href="page-service-details">Stone spa</Link></h3>
-                                        <div className="text">Proin efficitur, mauris vel condimentum pulvinar</div>
+                                        <h3 className="title"><Link href="page-service-details">Eyebrow Design</Link></h3>
+                                        <div className="text">Professional eyebrow shaping and waxing services</div>
                                         <Link className="read-more" href="page-service-details"><i className="icon-two fa-regular fa-arrow-right"></i></Link>
                                     </div>
                                     <div className="image-box">
@@ -40,8 +40,8 @@ const Services2 = () => {
                                 <div className="content-box-hover">
                                     <div className="content-box">
                                         <img className="icon" src="images/icons/theme-icon2.png" alt="icon"/>
-                                        <h3 className="title"><Link href="page-service-details">Stone spa</Link></h3>
-                                        <div className="text">Proin efficitur, mauris vel condimentum pulvinar</div>
+                                        <h3 className="title"><Link href="page-service-details">Brow Lamination</Link></h3>
+                                        <div className="text">Transform your brows with our lamination treatment</div>
                                         <Link className="read-more" href="page-service-details"><i className="icon-two fa-regular fa-arrow-right"></i></Link>
                                     </div>
                                     <div className="image-box">
@@ -58,8 +58,8 @@ const Services2 = () => {
                                 <div className="content-box-hover">                                
                                     <div className="content-box">
                                         <img className="icon" src="images/icons/theme-icon3.png" alt="icon"/>
-                                        <h3 className="title"><Link href="page-service-details">Stone spa</Link></h3>
-                                        <div className="text">Proin efficitur, mauris vel condimentum pulvinar</div>
+                                        <h3 className="title"><Link href="page-service-details">Hidragloss 💋</Link></h3>
+                                        <div className="text">Luxurious lip hydration and glossing treatment</div>
                                         <Link className="read-more" href="page-service-details"><i className="icon-two fa-regular fa-arrow-right"></i></Link>
                                     </div>
                                     <div className="image-box">

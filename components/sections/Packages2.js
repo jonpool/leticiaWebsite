@@ -51,7 +51,7 @@ const Packages2 = () => {
             <div className="sec-title text-center">
               <figure className="image"><img src="images/icons/icon1.png" alt="Image"/></figure>
               <span className="sub-title">Come & Explore</span>
-              <h2 className="words-slide-up text-split">Massage & Treatments</h2>
+              <h2 className="words-slide-up text-split">Our Services & Pricing</h2>
             </div>
             <div className="carousel-outer">
               <Swiper {...swiperOptions} className="packages-carousel owl-carousel owl-theme default-dots">
@@ -69,8 +69,8 @@ const Packages2 = () => {
                           <div className="bg bg-image-two" style={{ backgroundImage: 'url(/images/resource/package1-5.png)' }}></div>
                         </div>
                         <div className="content-box">
-                          <h3 className="name"><Link href="page-pricing">Manicure</Link></h3>
-                          <span className="price">70$.00</span>
+                          <h3 className="name"><Link href="page-pricing">Eyebrow Design (waxing)</Link></h3>
+                          <span className="price">$35.00</span>
                         </div>
                       </div>
                     </div>
@@ -88,8 +88,8 @@ const Packages2 = () => {
                           <div className="bg bg-image-two" style={{ backgroundImage: 'url(/images/resource/package1-5.png)' }}></div>
                         </div>
                         <div className="content-box">
-                          <h3 className="name"><Link href="page-pricing">Cupping Treat</Link></h3>
-                          <span className="price">40$.00</span>
+                          <h3 className="name"><Link href="page-pricing">Eyebrow Design + (henna or tint)</Link></h3>
+                          <span className="price">$50.00</span>
                         </div>
                       </div>
                     </div>
@@ -107,8 +107,8 @@ const Packages2 = () => {
                           <div className="bg bg-image-two" style={{ backgroundImage: 'url(/images/resource/package1-5.png)' }}></div>
                         </div>
                         <div className="content-box">
-                          <h3 className="name"><Link href="page-pricing">Stress Controled</Link></h3>
-                          <span className="price">60$.00</span>
+                          <h3 className="name"><Link href="page-pricing">Brow Lamination</Link></h3>
+                          <span className="price">$75.00</span>
                         </div>
                       </div>
                     </div>
@@ -126,8 +126,8 @@ const Packages2 = () => {
                           <div className="bg bg-image-two" style={{ backgroundImage: 'url(/images/resource/package1-5.png)' }}></div>
                         </div>
                         <div className="content-box">
-                          <h3 className="name"><Link href="page-pricing">Masking</Link></h3>
-                          <span className="price">30$.00</span>
+                          <h3 className="name"><Link href="page-pricing">Brow Lamination + Tint</Link></h3>
+                          <span className="price">$95.00</span>
                         </div>
                       </div>
                     </div>
@@ -145,8 +145,8 @@ const Packages2 = () => {
                       <div className="bg bg-image-two" style={{ backgroundImage: 'url(/images/resource/package1-5.png)' }}></div>
                     </div>
                     <div className="content-box">
-                      <h3 className="name"><Link href="page-pricing">Manicure</Link></h3>
-                      <span className="price">70$.00</span>
+                      <h3 className="name"><Link href="page-pricing">Hidragloss 💋</Link></h3>
+                      <span className="price">$70.00</span>
                     </div>
                   </div>
                 </div>
