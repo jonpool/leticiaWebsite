@@ -57,22 +57,7 @@ export default function MobileMenu() {
                         <li><Link href="/page-service-details">Service Details</Link></li>
                     </ul>
                     <div className="dropdown-btn" onClick={() => handleClick(4)}><i className="fa fa-angle-down" /></div></li>
-                <li className="dropdown"><Link href="/page-product">Shop</Link>
-                    <ul style={{ display: `${isActive.key == 5 ? "block" : "none"}` }}>
-                        <li><Link href="/page-product">Shop Grid</Link></li>
-                        <li><Link href="/shop-product-details">Shop Details</Link></li>
-                        <li><Link href="/shop-products-sidebar">Shop Sidebar</Link></li>
-                        <li><Link href="/shop-cart">Shop Cart</Link></li>
-                        <li><Link href="/shop-checkout">Shop Checkout</Link></li>
-                    </ul>
-                    <div className="dropdown-btn" onClick={() => handleClick(5)}><i className="fa fa-angle-down" /></div></li>
-                    <li className="dropdown"><Link href="/news-grid">News</Link>
-                        <ul style={{ display: `${isActive.key == 6 ? "block" : "none"}` }}>
-                        <li><Link href="/news-grid">News Grid</Link></li>
-                        <li><Link href="/news-details">News Details</Link></li>
-                        </ul>
-                        <div className="dropdown-btn" onClick={() => handleClick(6)}><i className="fa fa-angle-down" /></div>
-                    </li>
+
                 <li><Link href="/page-contact">Contact</Link></li>
             </ul>
 

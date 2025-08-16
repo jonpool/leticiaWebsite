@@ -38,21 +38,7 @@ export default function Menu() {
                         <li><Link href="/page-service-details">Service Details</Link></li>
                     </ul>
                 </li>
-                <li className="dropdown"><Link href="/page-product">Shop</Link>
-                    <ul>
-                        <li><Link href="/page-product">Shop Grid</Link></li>
-                        <li><Link href="/shop-product-details">Shop Details</Link></li>
-                        <li><Link href="/shop-products-sidebar">Shop Sidebar</Link></li>
-                        <li><Link href="/shop-cart">Shop Cart</Link></li>
-                        <li><Link href="/shop-checkout">Shop Checkout</Link></li>
-                    </ul>
-                </li>
-                <li className="dropdown"><Link href="/news-grid">News</Link>
-                    <ul>
-                        <li><Link href="/news-grid">News Grid</Link></li>
-                        <li><Link href="/news-details">News Details</Link></li>
-                    </ul>
-                </li>
+
                 <li><Link href="/page-contact">Contact</Link></li>
             </ul>
         </>
