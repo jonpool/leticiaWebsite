@@ -63,7 +63,7 @@ const Services2 = () => {
                                         <Link className="read-more" href="page-service-details"><i className="icon-two fa-regular fa-arrow-right"></i></Link>
                                     </div>
                                     <div className="image-box">
-                                        <figure className="image mb-0"><img src="images/resource/service2-1.jpg" alt="Image"/></figure>
+                                        <figure className="image mb-0"><img src="images/resource/service3-3.jpg" alt="Image"/></figure>
                                     </div>
                                 </div>
                             </div>

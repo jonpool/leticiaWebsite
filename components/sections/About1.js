@@ -13,7 +13,7 @@ const About1 = () => {
                       <div className="exp-box">
                         <div className="bg bg-image" style={{ backgroundImage: 'url(/images/resource/about1-6.png)' }}></div>
                         <div className="inner">
-                          <h2 className="title" data-text="25+">20+</h2>
+                          <h2 className="title" data-text="25+">5+</h2>
                           <span className="text">Experience</span>
                         </div>
                       </div>
@@ -45,7 +45,7 @@ const About1 = () => {
                           <div className="sign">
                             <img src="/images/resource/about-sign1.png" alt="Signature"/>
                           </div>
-                          <div className="name">Michale - <span className="designation">Co Founder</span></div>
+                          <div className="name">Leticia Pereira <span className="designation">Co Founder</span></div>
                         </div>
                       </div>
                     </div>

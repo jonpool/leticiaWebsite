@@ -2,6 +2,7 @@
 'use client'
 import { useEffect, useState } from "react"
 import BackToTop from '../elements/BackToTop'
+import WhatsAppButton from '../elements/WhatsAppButton'
 import Breadcrumb from './Breadcrumb'
 import Footer1 from './Footer1'
 import Footer2 from './Footer2'
@@ -58,6 +59,7 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
 
             </div>
                 <BackToTop />
+                <WhatsAppButton />
         </>
     )
 }

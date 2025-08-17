@@ -11,7 +11,7 @@ const Video1 = () => {
             <div className="row">
               <div className="col-lg-6">
                 <div className="sec-title mb-0">
-                  <h2 className="words-slide-up text-split">Book & feel our Incredible <br/> Spa Experience</h2>
+                  <h2 className="words-slide-up text-split">Book & feel our Incredible <br/> Brows Experience</h2>
                   <Link href="page-contact" className="theme-btn btn-style-two btn pricing-btn"><span className="btn-title">Make Appointment</span></Link>
                 </div>
               </div>

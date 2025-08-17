@@ -5,17 +5,17 @@ const Marquee1 = () => {
         <section className="marquee-section">
           <div className="marquee">
             <div className="marquee-group">
-              <div className="text" data-text="Mesotherapy">Mesotherapy</div>
-              <div className="text" data-text="Treatments">Treatments</div>
-              <div className="text" data-text="Relax">Relax</div>
-              <div className="text" data-text="Manicure">Manicure</div>
+              <div className="text" data-text="Brow Lamination">Brow Lamination</div>
+              <div className="text" data-text="Eyebrow Design">Eyebrow Design</div>
+              <div className="text" data-text="Hidragloss">Hidragloss</div>
+              <div className="text" data-text="Full face waxing">Full face waxing</div>
             </div>
       
             <div aria-hidden="true" className="marquee-group">
-              <div className="text" data-text="Mesotherapy">Mesotherapy</div>
-              <div className="text" data-text="Treatments">Treatments</div>
-              <div className="text" data-text="Relax">Relax</div>
-              <div className="text" data-text="Manicure">Manicure</div>
+              <div className="text" data-text="Brow Lamination">Brow Lamination</div>
+              <div className="text" data-text="Eyebrow Design">Eyebrow Design</div>
+              <div className="text" data-text="Hidragloss">Hidragloss</div>
+              <div className="text" data-text="Full face waxing">Full face waxing</div>
             </div>
           </div>
         </section>

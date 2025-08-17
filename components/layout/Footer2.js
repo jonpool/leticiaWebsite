@@ -25,7 +25,7 @@ export default function Footer2() {
 								</form>
 							</div>
 							<ul className="social-icon">
-								<li><Link href="#"><i className="icon fab fa-twitter"></i></Link></li>
+								<li><Link href="https://instagram.com/browsbyleticia" target="_blank"><i className="icon fab fa-instagram"></i></Link></li>
 								<li><Link href="#"><i className="icon fab fa-facebook-f"></i></Link></li>
 								<li><Link href="#"><i className="icon fab fa-pinterest-p"></i></Link></li>
 								<li><Link href="#"><i className="icon fab fa-vimeo-v"></i></Link></li>
@@ -47,11 +47,12 @@ export default function Footer2() {
 
 					<div className="footer-column col-xl-3  col-lg-6 col-md-6 col-sm-6">
 						<div className="footer-widget timetable-widget">
-							<h3 className="widget-title">Open Hours</h3>
+							<h3 className="widget-title">Business Hours</h3>
 							<ul className="timetable">
-								<li>Monday to Friday : <span>09:00-20:00</span></li>
-								<li>Saturday: <span>09:00-18:00</span></li>
-								<li>Sunday: <span>09:00-18:00</span></li>
+								<li>Tuesday to Wednesday : <span>8:00 AM – 7:00 PM</span></li>
+								<li>Thursday: <span>8:00 AM – 6:00 PM</span></li>
+								<li>Friday to Saturday: <span>8:00 AM – 5:00 PM</span></li>
+								<li>Sunday to Monday: <span>Closed</span></li>
 							</ul>
 						</div>
 					</div>
@@ -59,10 +60,10 @@ export default function Footer2() {
 					<div className="footer-column col-xl-3  col-lg-6 col-md-6 col-sm-6">
 						<div className="footer-widget contacts-widget">
 							<h3 className="widget-title">Contact</h3>
-							<div className="text">2972 Westheimer Rd. Santa Ana, Illinois <br/> 85486</div>
+							<div className="text">527 Main Street, 2nd Floor, Room 8 <br/> Melrose, MA 02176</div>
 							<ul className="contact-info">
-								<li><Link className="text-style-two" href="tel:555-0101">(907) 555-0101</Link></li>
-								<li><Link className="text-style-one" href="mailto:yourmail@company.com">yourmail@company.com</Link></li>
+								<li><Link className="text-style-two" href="tel:857-888-6973">(857) 888-6973</Link></li>
+								<li><Link className="text-style-one" href="mailto:lp.designmakeup@gmail.com">lp.designmakeup@gmail.com</Link></li>
 							</ul>
 						</div>
 					</div>

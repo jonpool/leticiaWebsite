@@ -48,7 +48,7 @@ const Instagram1 = () => {
                 <div className="inner-box">
                   <div className="image-box">
                     <figure className="image">
-                      <Link className="lightbox-image" href="images/resource/instagram1-1.jpg"><img src="images/resource/instagram1-1.jpg" alt="Image"/></Link>
+                      <Link className="lightbox-image" href="images/resource/instagram1-1.jpg"><img src="images/resource/instagram1-5.jpg" alt="Image"/></Link>
                     </figure>
                     <i className="icon fab fa-instagram"></i>
                   </div>
