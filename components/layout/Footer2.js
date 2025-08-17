@@ -15,15 +15,8 @@ export default function Footer2() {
 					<div className="footer-column col-xl-3  col-lg-6 col-md-6 col-sm-6">
 						<div className="footer-widget about-widget">
 							<div className="logo"><Link href="/"><img src="images/logo-2.png" alt=""/></Link></div>
-							<div className="text">Proin efficitur, mauris vel condimentum pulvinar, velit orci consectetur ligul. </div>
-							<div className="subscribe-form">
-								<form method="post" action="#">
-									<div className="form-group">
-										<input type="email" name="email" className="email" defaultValue="" placeholder="Enter Your E-mail" required=""/>
-										<button type="button" className="theme-btn"><span className="btn-title"><i className="fa-sharp fa-thin fa-paper-plane"></i></span></button>
-									</div>
-								</form>
-							</div>
+							<div className="text">Book online or send a message through Instagram. Leticia personally handles all appointments and messages to ensure every client gets the best attention.</div>
+							
 							<ul className="social-icon">
 								<li><Link href="https://instagram.com/browsbyleticia" target="_blank"><i className="icon fab fa-instagram"></i></Link></li>
 								<li><Link href="#"><i className="icon fab fa-facebook-f"></i></Link></li>
@@ -35,12 +28,12 @@ export default function Footer2() {
 
 					<div className="footer-column col-xl-3  col-lg-6 col-md-6 col-sm-6">
 						<div className="footer-widget links-widget">
-							<h3 className="widget-title">Links</h3>
+							<h3 className="widget-title"></h3>
 							<ul className="user-links">
-								<li><Link href="#">About</Link></li>
-								<li><Link href="#">Pricing</Link></li>
-								<li><Link href="#">Shop</Link></li>
-								<li><Link href="#">Contact</Link></li>
+								<li><Link href="#"></Link></li>
+								<li><Link href="#"></Link></li>
+								<li><Link href="#"></Link></li>
+								<li><Link href="#"></Link></li>
 							</ul>
 						</div>
 					</div>
@@ -74,7 +67,7 @@ export default function Footer2() {
 		<div className="footer-bottom">
 			<div className="auto-container">
 				<div className="inner-container">
-					<div className="copyright-text">&copy; Purerelax, <Link href="/">Reserved By Kodesolution</Link></div>
+					<div className="copyright-text">&copy; Brows by Leticia <Link href="/"> All rights reserved</Link></div>
 				</div>
 			</div>
 		</div>
