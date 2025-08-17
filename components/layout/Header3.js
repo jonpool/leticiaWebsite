@@ -1,8 +1,20 @@
 import Link from "next/link"
+import React, { useState } from 'react';
 import Menu from "./Menu"
 import MobileMenu from "./MobileMenu"
+import BookingModal from "../elements/BookingModal";
 
 export default function Header3({ scroll, isSearch, handleSearch, isMobileMenu, handleMobileMenu }) {
+    const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
+
+    const handleBookingClick = (e) => {
+        e.preventDefault();
+        setIsBookingModalOpen(true);
+    };
+
+    const closeBookingModal = () => {
+        setIsBookingModalOpen(false);
+    };
     return (
         <>
             <header className={`main-header header-style-one header-overlay ${isSearch ? "moblie-search-active" : ""}`}>
@@ -45,7 +57,7 @@ export default function Header3({ scroll, isSearch, handleSearch, isMobileMenu, 
 
                         <div className="outer-box">
                             <div className="btn-box">
-                            <Link href="page-contact" className="theme-btn btn-style-one btn-style-transparent"><span className="btn-title">BOOK NOW</span></Link>
+                            <button onClick={handleBookingClick} className="theme-btn btn-style-one btn-style-transparent"><span className="btn-title">BOOK NOW</span></button>
                             </div>
 
                             <div className="mobile-nav-toggler" onClick={handleMobileMenu}><span className="icon lnr-icon-bars"></span></div>
@@ -134,7 +146,7 @@ export default function Header3({ scroll, isSearch, handleSearch, isMobileMenu, 
                     </div>
                 </div>{/* End Sticky Menu */}
             </header >
-
+            <BookingModal isOpen={isBookingModalOpen} onClose={closeBookingModal} />
         </>
     )
 }

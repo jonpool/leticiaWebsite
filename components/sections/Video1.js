@@ -1,8 +1,20 @@
 import Link from "next/link";
 import React, { useState } from 'react';
 import ModalVideo from 'react-modal-video';
+import BookingModal from '../elements/BookingModal';
+
 const Video1 = () => {
-    const [isOpen, setOpen] = useState(false)
+    const [isOpen, setOpen] = useState(false);
+    const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
+
+    const handleBookingClick = (e) => {
+        e.preventDefault();
+        setIsBookingModalOpen(true);
+    };
+
+    const closeBookingModal = () => {
+        setIsBookingModalOpen(false);
+    };
     return (
         <>
         <section id="gallery" className="video-section">
@@ -12,7 +24,7 @@ const Video1 = () => {
               <div className="col-lg-6">
                 <div className="sec-title mb-0">
                   <h2 className="words-slide-up text-split">Book & feel our Incredible <br/> Brows Experience</h2>
-                  <Link href="page-contact" className="theme-btn btn-style-two btn pricing-btn"><span className="btn-title">Make Appointment</span></Link>
+                  <button onClick={handleBookingClick} className="theme-btn btn-style-two btn pricing-btn"><span className="btn-title">Make Appointment</span></button>
                 </div>
               </div>
               <div className="col-lg-6">
@@ -27,6 +39,7 @@ const Video1 = () => {
           </div>
         </section>
         <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="L61p2uyiMSo" onClose={() => setOpen(false)} />
+        <BookingModal isOpen={isBookingModalOpen} onClose={closeBookingModal} />
         </>
     );
 };

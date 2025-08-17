@@ -1,4 +1,3 @@
-import Link from "next/link"
 const Services2 = () => {
     return (
         <>
@@ -22,9 +21,8 @@ const Services2 = () => {
                                 <div className="content-box-hover">                                
                                     <div className="content-box">
                                         <img className="icon" src="images/icons/theme-icon1.png" alt="icon"/>
-                                        <h3 className="title"><Link href="page-service-details">Eyebrow Design</Link></h3>
+                                        <h3 className="title">Eyebrow Design</h3>
                                         <div className="text">Professional eyebrow shaping and waxing services</div>
-                                        <Link className="read-more" href="page-service-details"><i className="icon-two fa-regular fa-arrow-right"></i></Link>
                                     </div>
                                     <div className="image-box">
                                         <figure className="image mb-0"><img src="images/resource/service2-1.jpg" alt="Image"/></figure>
@@ -40,9 +38,8 @@ const Services2 = () => {
                                 <div className="content-box-hover">
                                     <div className="content-box">
                                         <img className="icon" src="images/icons/theme-icon2.png" alt="icon"/>
-                                        <h3 className="title"><Link href="page-service-details">Brow Lamination</Link></h3>
+                                        <h3 className="title">Brow Lamination</h3>
                                         <div className="text">Transform your brows with our lamination treatment</div>
-                                        <Link className="read-more" href="page-service-details"><i className="icon-two fa-regular fa-arrow-right"></i></Link>
                                     </div>
                                     <div className="image-box">
                                         <figure className="image mb-0"><img src="images/resource/service2-2.jpg" alt="Image"/></figure>
@@ -58,9 +55,8 @@ const Services2 = () => {
                                 <div className="content-box-hover">                                
                                     <div className="content-box">
                                         <img className="icon" src="images/icons/theme-icon3.png" alt="icon"/>
-                                        <h3 className="title"><Link href="page-service-details">Hidragloss 💋</Link></h3>
+                                        <h3 className="title">Hidragloss 💋</h3>
                                         <div className="text">Luxurious lip hydration and glossing treatment</div>
-                                        <Link className="read-more" href="page-service-details"><i className="icon-two fa-regular fa-arrow-right"></i></Link>
                                     </div>
                                     <div className="image-box">
                                         <figure className="image mb-0"><img src="images/resource/service3-3.jpg" alt="Image"/></figure>
