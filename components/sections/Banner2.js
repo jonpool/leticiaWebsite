@@ -21,7 +21,7 @@ const Banner2 = () => {
                 <div className="auto-container content-box">
                   <span className="sub-title">Professional Styling Since 2020</span>
                   <h1 className="title">The Essence <br/> Of Beauty</h1>
-                  <p className="text">Proin efficitur, mauris vel condimentum pulvinar, velit orci consectetur ligula, eget egestas magna mi ut arcu. Phasellus nec odio orci. Nunc id massa ante.</p>
+                  <p className="text">At our space, women find more than beauty treatments — they enjoy a moment of self-care, attention to detail, and personalized artistry.</p>
                   <button onClick={handleBookingClick} className="theme-btn btn-style-one"><span className="btn-title">Book Now</span></button>
                   <figure className="image home2-circle-img bounce-z"><img src="/images/main-slider/slide2-4.png" alt="Image"/></figure>
                   <figure className="image2"><img src="/images/main-slider/slide2-2.png" alt="Image"/></figure>

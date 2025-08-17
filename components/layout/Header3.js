@@ -13,13 +13,13 @@ export default function Header3({ scroll, isSearch, handleSearch, isMobileMenu, 
 
                         <div className="top-left">
                             <ul className="list-style-one">
-                            <li><Link href="mailto:lawson@example.com">alma.lawson@example.com</Link></li>
+                            <li><Link href="mailto:lp.designmakeup@gmail.com">lp.designmakeup@gmail.com</Link></li>
                             </ul>
                         </div>
 
                         <div className="top-right">
                             <ul className="list-style-two">
-                            <li>Mon to Sat: 9:00am – 6:00pm Sun: <Link className="active" href="#">Closed</Link></li>
+                            <li>Mon to Sat: 9:00am – 6:00pm  Sun–Mon: <Link className="active" href="#">Closed</Link></li>
                             </ul>
                             <ul className="social-icon-one">
                             <li><Link href="#"><span className="icon fab fa-twitter"></span></Link></li>

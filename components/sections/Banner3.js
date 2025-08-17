@@ -31,7 +31,7 @@ const Banner3 = () => {
                     </div>
                     <div className="content-box col-xl-5 col-lg-6 col-md-12 col-sm-12">
                       <figure className="image-shape animate-4 animate-x bounce-x"><img src="images/main-slider/slide3-2.png" alt=""/></figure>
-                      <div className="title-stroke-text fadeInUpBig">Purerelax</div>
+                      <div className="title-stroke-text fadeInUpBig">Leticia Pereira</div>
                       <span className="sub-title animate-2">Experience Top Expert Services</span>
                       <h1 className="title animate-3">Spa & Beauty <br/>Treatment</h1>
                       <div className="text animate-4">At PureRelax, we believe in celebrating your beauty, and we are sure you'll fall in love with the serene and luxurious experience we’ve <br/>Just crafted for your time now offer</div>
