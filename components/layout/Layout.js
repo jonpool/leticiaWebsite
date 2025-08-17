@@ -36,7 +36,7 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
     }, [])
     return (
         <>
-            <PageHead />
+            <PageHead headTitle={headTitle} />
             <div className="page-wrapper" id="top">
                 {!headerStyle && <Header1 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} isSearch={isSearch} handleSearch={handleSearch} />}
                 {headerStyle == 1 ? <Header1 scroll={scroll} isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} isSearch={isSearch} handleSearch={handleSearch} /> : null}

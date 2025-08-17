@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <>
-    <Layout headerStyle={3} footerStyle={2}>
+    <Layout headerStyle={3} footerStyle={2} headTitle="Brows By Leticia | Premium Eyebrow Design & Brow Lamination in Melrose, MA">
       <Banner2 />
       <About1 />
       <Services1 />
