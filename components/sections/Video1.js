@@ -5,7 +5,7 @@ const Video1 = () => {
     const [isOpen, setOpen] = useState(false)
     return (
         <>
-        <section className="video-section">
+        <section id="gallery" className="video-section">
           <div className="bg bg-image" style={{ backgroundImage: 'url(/images/background/bg-video1.jpg)' }}></div>
           <div className="auto-container">
             <div className="row">

@@ -6,6 +6,7 @@ import 'swiper/css/pagination';
 import '../public/css/bootstrap.min.css';
 import '../public/css/style.css';
 import '../public/css/booking-modal.css';
+import '../public/css/image-modal.css';
 //import '../public/css/responsive.css';
 
 import "swiper/css/free-mode";

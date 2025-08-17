@@ -2,7 +2,7 @@ import Link from "next/link"
 const Pricing1 = () => {
     return (
         <>
-        <section className="pricing-section">
+        <section id="pricing" className="pricing-section">
           <div className="leaf1 bounce-x"></div>
           <div className="leaf2 bounce-x"></div>
           <div className="auto-container">

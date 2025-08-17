@@ -2,7 +2,7 @@ import Link from "next/link"
 const Services2 = () => {
     return (
         <>
-        <section className="services-section-two">
+        <section id="services" className="services-section-two">
             <div className="bg bg-image-four" style={{ backgroundImage: 'url(/images/background/bg-service1.jpg)' }}></div>
             <div className="leaf3-pattrn1 bounce-x"></div>
             <div className="about2-8-pattrn2 bounce-y"></div>

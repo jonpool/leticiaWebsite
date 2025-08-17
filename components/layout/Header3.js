@@ -19,7 +19,7 @@ export default function Header3({ scroll, isSearch, handleSearch, isMobileMenu, 
 
                         <div className="top-right">
                             <ul className="list-style-two">
-                            <li>Mon to Sat: 9:00am – 6:00pm  Sun–Mon: <Link className="active" href="#">Closed</Link></li>
+                            <li>Call US:  <Link className="active" href="tel:+8578886973">(857) 888-6973</Link></li>
                             </ul>
                             <ul className="social-icon-one">
                             <li><Link href="#"><span className="icon fab fa-twitter"></span></Link></li>
@@ -44,15 +44,8 @@ export default function Header3({ scroll, isSearch, handleSearch, isMobileMenu, 
                         </div>
 
                         <div className="outer-box">
-
-                            <button className="ui-btn search-btn" onClick={handleSearch}>
-                            <i className="icon fal fa-search"></i>
-                            </button>
-
-                            <div className="divider"></div>
-
                             <div className="btn-box">
-                            <Link href="page-contact" className="theme-btn btn-style-one btn-style-transparent"><span className="btn-title">CONTACT US</span></Link>
+                            <Link href="page-contact" className="theme-btn btn-style-one btn-style-transparent"><span className="btn-title">BOOK NOW</span></Link>
                             </div>
 
                             <div className="mobile-nav-toggler" onClick={handleMobileMenu}><span className="icon lnr-icon-bars"></span></div>
