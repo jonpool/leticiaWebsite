@@ -36,10 +36,10 @@ const Testimonial8 = () => {
                       <i className="icon fa fa-star"></i>
                       <i className="icon fa fa-star"></i>
                     </div>
-                    <div className="text">“  Suspendisse sit amet neque euismod, convallis quam eget, dignissim massa. Aliquam blandit risus purus, in congue nunc venenatis id. Pellentesque habitant morbi tristique senectus ”</div>
+                    <div className="text">"Leticia is amazing! I’ve never trusted anyone with my brows before, but she made me feel comfortable from the start. She takes her time mapping everything perfectly and explains the process. My brows look so natural and clean—exactly what I wanted. I left her studio feeling more confident than ever."</div>
                     <div className="info-box">
-                      <h4 className="name">Robert Fox -</h4>
-                      <span className="designation">Co Founder</span>
+                      <h4 className="name"></h4>
+                      <span className="designation"></span>
                     </div>
                   </div>
                 </div>
@@ -55,10 +55,10 @@ const Testimonial8 = () => {
                       <i className="icon fa fa-star"></i>
                       <i className="icon fa fa-star"></i>
                     </div>
-                    <div className="text">“  Suspendisse sit amet neque euismod, convallis quam eget, dignissim massa. Aliquam blandit risus purus, in congue nunc venenatis id. Pellentesque habitant morbi tristique senectus ”</div>
+                    <div className="text">"Leticia goes above and beyond! She doesn’t just shape your brows—she customizes the look to fit your face. She listened to my concerns and created the exact style I had in mind. On top of that, she’s super sweet and makes the whole appointment enjoyable. I finally found my go-to brow artist!"</div>
                     <div className="info-box">
-                      <h4 className="name">Robert Fox -</h4>
-                      <span className="designation">Co Founder</span>
+                      <h4 className="name"></h4>
+                      <span className="designation"></span>
                     </div>
                   </div>
                 </div>
