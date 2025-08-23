@@ -38,14 +38,16 @@ export default function Footer2() {
 						</div>
 					</div>
 
+
+
 					<div className="footer-column col-xl-3  col-lg-6 col-md-6 col-sm-6">
 						<div className="footer-widget timetable-widget">
 							<h3 className="widget-title">Business Hours</h3>
 							<ul className="timetable">
-								<li>Tuesday to Wednesday : <span>8:00 AM – 7:00 PM</span></li>
-								<li>Thursday: <span>8:00 AM – 6:00 PM</span></li>
-								<li>Friday to Saturday: <span>8:00 AM – 5:00 PM</span></li>
-								<li>Sunday to Monday: <span>Closed</span></li>
+								<li>Tue to Wed:  8:00 AM – 7:00 PM</li>
+								<li>Thu: 8:00 AM – 6:00 PM</li>
+								<li>Fri to Sat: 8:00 AM – 5:00 PM</li>
+								<li>Sun to Mon: Closed</li>
 							</ul>
 						</div>
 					</div>
@@ -55,7 +57,7 @@ export default function Footer2() {
 							<h3 className="widget-title">Contact</h3>
 							<div className="text">527 Main Street, 2nd Floor, Room 8 <br/> Melrose, MA 02176</div>
 							<ul className="contact-info">
-								<li><Link className="text-style-two" href="tel:857-888-6973">(857) 888-6973</Link></li>
+								<li><Link className="text-style-two" href="tel:+18578886973">(857) 888-6973</Link></li>
 								<li><Link className="text-style-one" href="mailto:lp.designmakeup@gmail.com">lp.designmakeup@gmail.com</Link></li>
 							</ul>
 						</div>

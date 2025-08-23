@@ -8,23 +8,25 @@
 
 .main-slider {
   position: relative;
-  .sub-title {
-    color: var(--headings-color);
-    font-size: 20px;
-    font-weight: 400;
-    position: relative;
-    display: inline-block;
-    line-height: var(--sec-title-subtitle-line-height);
-    font-family: var(--sec-title-subtitle-font-family);
-    margin-top: 0;
-  }
-  .title {
-    text-transform: uppercase;
-    position: relative;
-    font-size: var(--h1-font-size);
-    font-weight: 700;
-    line-height: 1.211em;
-    margin-bottom: 20px;
+     .sub-title {
+     color: var(--headings-color);
+     font-size: 20px;
+     font-weight: 400;
+     position: relative;
+     display: inline-block;
+     line-height: var(--sec-title-subtitle-line-height);
+     font-family: var(--sec-title-subtitle-font-family);
+     margin-top: 0;
+     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+   }
+     .title {
+     text-transform: uppercase;
+     position: relative;
+     font-size: var(--h1-font-size);
+     font-weight: 700;
+     line-height: 1.211em;
+     margin-bottom: 20px;
+     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
     @media (max-width: 801.98px) {
       font-size: 50px;
     }
@@ -35,6 +37,10 @@
   .text{
     max-width: 40%;
     position: relative;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    font-weight: 500;
+    line-height: 1.6;
     @media (max-width: 1280px) {
       max-width: 50%;
     }
@@ -134,9 +140,26 @@
       @media (max-width: 1199.98px) {
         text-align: right;
       }
-      @media (max-width: 767.98px) {
-        display: none;
-      }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               @media (max-width: 767.98px) {
+             max-width: 90vw !important;
+             width: 90vw !important;
+             height: auto !important;
+             position: absolute !important;
+             margin: 0 !important;
+             bottom: 100px !important;
+             left: 80% !important;
+             right: 5% !important;
+             top: auto !important;
+             transform: translateX(-50%) !important;
+             z-index: 2 !important;
+           }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               @media (max-width: 480px) {
+              max-width: 85vw !important;
+              width: 85vw !important;
+              bottom: 40px !important;
+              top: auto !important;
+              transform: translateX(-50%) !important;
+            }
     }
   }
   &.slider-style-two{
@@ -145,13 +168,22 @@
       @media (max-width: 1280px) {
         padding-left: 15px;
       }
-      @media (max-width: 767px) {
-        padding: 100px 0 100px 25px;
+             @media (max-width: 767px) {
+         padding: 100px 0 100px 25px;
+       }
+       @media (max-width: 767px) {
+         .sub-title,
+         .title,
+         .text,
+         .theme-btn {
+           position: relative;
+           z-index: 3;
+         }
+       }
+    }
+                   .content-box .image2{
+        left: 30%;
       }
-    }
-    .content-box .image2{
-      left: 30%;
-    }
     .swiper-button-prev,
     .swiper-button-next{
       background-color: rgba(28, 26, 29, 0.5);

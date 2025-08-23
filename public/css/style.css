@@ -8712,6 +8712,7 @@ Section Title
   line-height: var(--sec-title-subtitle-line-height);
   font-family: var(--sec-title-subtitle-font-family);
   margin-top: 0;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
 }
 .main-slider .title {
   text-transform: uppercase;
@@ -8720,6 +8721,7 @@ Section Title
   font-weight: 700;
   line-height: 1.211em;
   margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
 }
 @media (max-width: 801.98px) {
   .main-slider .title {
@@ -8734,6 +8736,10 @@ Section Title
 .main-slider .text {
   max-width: 40%;
   position: relative;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  line-height: 1.6;
 }
 @media (max-width: 1280px) {
   .main-slider .text {
@@ -8857,7 +8863,27 @@ Section Title
 }
 @media (max-width: 767.98px) {
   .main-slider .content-box .image2 {
-    display: none;
+    max-width: 90vw !important;
+    width: 90vw !important;
+    height: auto !important;
+    position: absolute !important;
+    margin: 0 !important;
+    bottom: 100px !important;
+    left: 80% !important;
+    right: 5% !important;
+    top: auto !important;
+    transform: translateX(-50%) !important;
+    z-index: 2 !important;
+  }
+}
+@media (max-width: 480px) {
+  .main-slider .content-box .image2 {
+    max-width: 85vw !important;
+    width: 85vw !important;
+    left: 80% !important;
+    bottom: 100px !important;
+    top: auto !important;
+    transform: translateX(-50%) !important;
   }
 }
 .main-slider.slider-style-two .content-box {
@@ -8872,9 +8898,28 @@ Section Title
   .main-slider.slider-style-two .content-box {
     padding: 100px 0 100px 25px;
   }
+  .main-slider.slider-style-two .content-box .sub-title,
+  .main-slider.slider-style-two .content-box .title,
+  .main-slider.slider-style-two .content-box .text,
+  .main-slider.slider-style-two .content-box .theme-btn {
+    position: relative;
+    z-index: 3;
+  }
 }
 .main-slider.slider-style-two .content-box .image2 {
   left: 30%;
+}
+
+/* Force mobile positioning */
+@media (max-width: 767px) {
+  .main-slider.slider-style-two .content-box .image2 {
+    left: 80% !important;
+    top: auto !important;
+    bottom: 100px !important;
+    transform: translateX(-50%) !important;
+    max-width: 90vw !important;
+    width: 90vw !important;
+  }
 }
 .main-slider.slider-style-two .swiper-button-prev,
 .main-slider.slider-style-two .swiper-button-next {

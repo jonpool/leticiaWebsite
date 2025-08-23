@@ -31,7 +31,7 @@ export default function Header3({ scroll, isSearch, handleSearch, isMobileMenu, 
 
                         <div className="top-right">
                             <ul className="list-style-two">
-                            <li>Call US:  <Link className="active" href="tel:+8578886973">(857) 888-6973</Link></li>
+                            <li>Call US:  <Link className="active" href="tel:+18578886973">(857) 888-6973</Link></li>
                             </ul>
                             <ul className="social-icon-one">
                             <li><Link href="#"><span className="icon fab fa-twitter"></span></Link></li>
@@ -81,23 +81,23 @@ export default function Header3({ scroll, isSearch, handleSearch, isMobileMenu, 
                                 <div className="contact-info-box">
                                     <i className="icon lnr-icon-phone-handset" />
                                     <span className="title">Call Now</span>
-                                    <Link href="/tel:+92880098670">+92 (8800) - 98670</Link>
+                                    <Link href="tel:+18578886973">(857) 888-6973</Link>
                                 </div>
                             </li>
                             <li>
                                 {/* Contact Info Box */}
                                 <div className="contact-info-box">
                                     <span className="icon lnr-icon-envelope1" />
-                                    <span className="title">Send Email</span>
-                                    <Link href="/mailto:help@company.com">help@company.com</Link>
+                                    <span className="title">Email</span>
+                                    <Link href="mailto:lp.designmakeup@gmail.com">lp.designmakeup@gmail.com</Link>
                                 </div>
                             </li>
                             <li>
                                 {/* Contact Info Box */}
                                 <div className="contact-info-box">
-                                    <span className="icon lnr-icon-clock" />
-                                    <span className="title">Send Email</span>
-                                    Mon - Sat 8:00 - 6:30, Sunday - CLOSED
+                                    <span className="icon lnr-icon-location" />
+                                    <span className="title">Address</span>
+                                    <span>527 Main Street, 2nd Floor, Room 8<br/>Melrose, MA 02176</span>
                                 </div>
                             </li>
                         </ul>

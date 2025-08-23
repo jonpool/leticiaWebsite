@@ -29,7 +29,7 @@ export default function Menu() {
                 <li>
                     <a href="#pricing" onClick={(e) => { e.preventDefault(); scrollToSection('pricing'); }}>Pricing</a>
                 </li>
-                <li><Link href="/page-contact">Contact</Link></li>
+
             </ul>
         </>
     )
