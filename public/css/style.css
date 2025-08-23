@@ -10495,7 +10495,7 @@ Section Title
 }
 @media (max-width: 767px) {
   .main-slider.slider-style-two .content-box {
-    padding: 110px 0 130px 25px;
+    padding: 110px 0 150px 25px;
   }
   .main-slider.slider-style-two .content-box .sub-title,
   .main-slider.slider-style-two .content-box .title,
@@ -10524,7 +10524,7 @@ Section Title
   .main-slider.slider-style-two {
     min-height: auto !important;
     height: auto !important;
-    max-height: 660px !important;
+    max-height: 680px !important;
     overflow: hidden !important;
   }
 }
