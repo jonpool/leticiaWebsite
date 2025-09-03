@@ -19,8 +19,8 @@ const About1 = () => {
                       </div>
                       <figure className="image overlay-anim" style={{ backgroundColor: 'white' }}><img src="/images/resource/about1-1.png" alt="Image"/></figure>
                       <div className="bg bg-image-one bounce-x" style={{ backgroundImage: 'url(/images/resource/about1-3.png)' }}></div>
-                      <div className="bg bg-image-two bounce-y" style={{ backgroundImage: 'url(/images/resource/about1-4.png)' }}></div>
-                      <div className="bg bg-image-three" style={{ backgroundImage: 'url(/images/resource/about1-7.png)' }}></div>
+                      
+                      
                       <div className="bg bg-image-four bounce-Y" style={{ backgroundImage: 'url(/images/resource/about1-8.png)' }}></div>
                     </div>
                   </div>
