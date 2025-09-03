@@ -30,7 +30,7 @@ const About1 = () => {
                     <div className="sec-title mb-0">
                       <span className="sub-title">Get to know us</span>
                       <h2 className="words-slide-up">Brows By Leticia</h2>
-                      <div className="text">Welcome to Brows by Leticia, where eyebrow design is more than just a service — it’s a signature of confidence. Located in the heart of Melrose, MA, Leticia Pereira brings passion, precision, and years of experience to every detail of your face.</div>
+                      <div className="text">ce.</div>
                     </div>
                     <ul className="list-style">
                       <li><figure className="icon"><img src="/images/icons/theme-icon4.png" alt="Image"/></figure> Eyebrow Design</li>

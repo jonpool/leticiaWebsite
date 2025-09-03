@@ -20,8 +20,9 @@ const Banner2 = () => {
                 <div className="bg bg-image" style={{ backgroundColor: 'white' }}></div>
                 <div className="auto-container content-box">
                   <span className="sub-title">Professional Styling Since 2020</span>
-                  <h1 className="title">The Essence <br/> Of Beauty</h1>
-                  <p className="text">At our space, women find more than beauty treatments — they enjoy a moment of self-care, attention to detail, and personalized artistry.</p>
+                  <h1 className="title">Brows By leticia</h1>
+                  <p className="text">Hello, my name is Leticia and I’m so happy to have connected with you here. 
+                  My commitment is to listen and understand your needs, so that every appointment is unique, personalized, and done with care. More than beautifully shaped brows, my wish is that you leave our space feeling confident, valued, and with your self-esteem renewed. Thank you for choosing me!</p>
                   <button onClick={handleBookingClick} className="theme-btn btn-style-one"><span className="btn-title">Book Now</span></button>
                   <figure className="image home2-circle-img bounce-z"><img src="/images/main-slider/slide2-4.png" alt="Image"/></figure>
                   <figure className="image2"><img src="/images/main-slider/slide2-2.png" alt="Image"/></figure>
