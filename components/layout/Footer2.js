@@ -44,9 +44,10 @@ export default function Footer2() {
 						<div className="footer-widget timetable-widget">
 							<h3 className="widget-title">Business Hours</h3>
 							<ul className="timetable">
-								<li>Tue to Wed:  8:00 AM – 7:00 PM</li>
-								<li>Thu: 8:00 AM – 6:00 PM</li>
-								<li>Fri to Sat: 8:00 AM – 5:00 PM</li>
+								<li>Tue to Thu:  10:00 AM – 7:00 PM</li>
+								<li>Friday: 10:00 AM – 6:00 PM</li>
+								<li>Fri: 10:00 AM – 6:00 PM</li>
+								<li>Sat: 9:00 AM – 3:00 PM</li>
 								<li>Sun to Mon: Closed</li>
 							</ul>
 						</div>
