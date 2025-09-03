@@ -13,7 +13,7 @@ const About1 = () => {
                       <div className="exp-box">
                         <div className="bg bg-image" style={{ backgroundImage: 'url(/images/resource/about1-6.png)' }}></div>
                         <div className="inner">
-                          <h2 className="title" data-text="25+">5+</h2>
+                          <h2 className="title" data-text="25+">8+</h2>
                           <span className="text">Experience</span>
                         </div>
                       </div>
@@ -30,12 +30,14 @@ const About1 = () => {
                     <div className="sec-title mb-0">
                       <span className="sub-title">Get to know us</span>
                       <h2 className="words-slide-up">Brows By Leticia</h2>
-                      <div className="text">ce.</div>
+                      <div className="text">Welcome to Brows by Leticia, where eyebrow design is more than just a service — it’s a signature of confidence. Located in the heart of Melrose, MA, Leticia Pereira brings passion, precision, and years of experience to every detail of your face.</div>
                     </div>
                     <ul className="list-style">
                       <li><figure className="icon"><img src="/images/icons/theme-icon4.png" alt="Image"/></figure> Eyebrow Design</li>
                       <li><figure className="icon"><img src="/images/icons/theme-icon4.png" alt="Image"/></figure> Brow Lamination</li>
                       <li><figure className="icon"><img src="/images/icons/theme-icon4.png" alt="Image"/></figure> Full face waxing</li>
+                      <li><figure className="icon"><img src="/images/icons/theme-icon4.png" alt="Image"/></figure> Eyebrow design + tint (henna)</li>
+                      <li><figure className="icon"><img src="/images/icons/theme-icon4.png" alt="Image"/></figure> Hidragloss</li>
                     </ul>
                     <div className="author-box">
                       <div className="inner d-block d-sm-flex">
