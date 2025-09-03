@@ -20596,7 +20596,8 @@ Sidebar
 
 @media (max-width: 767px) {
   .main-slider.slider-style-two .content-box {
-    padding-top: 250px;
+    padding-top: 180px;
+    padding-bottom: 80px;
   }
 }
 
@@ -20675,3 +20676,6 @@ Sidebar
     height: 25px;
   }
 }
+
+
+
