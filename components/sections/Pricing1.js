@@ -25,7 +25,7 @@ const Pricing1 = () => {
                         <h5 className="title"><Link href="page-pricing">Eyebrow Design (waxing)</Link></h5>
                         <div className="text">Professional eyebrow shaping with wax</div>
                       </div>
-                      <span className="price">$35</span>
+                      <span className="price">$40</span>
                     </div>
                   </div>
                 </div>
@@ -39,7 +39,7 @@ const Pricing1 = () => {
                         <h5 className="title"><Link href="page-pricing">Eyebrow Design + (henna or tint)</Link></h5>
                         <div className="text">Eyebrow shaping with color enhancement</div>
                       </div>
-                      <span className="price">$50</span>
+                      <span className="price">$55</span>
                     </div>
                   </div>
                 </div>
@@ -53,7 +53,7 @@ const Pricing1 = () => {
                         <h5 className="title"><Link href="page-pricing">Brow Lamination</Link></h5>
                         <div className="text">Transform your brows with lamination</div>
                       </div>
-                      <span className="price">$75</span>
+                      <span className="price">$80</span>
                     </div>
                   </div>
                 </div>
@@ -79,7 +79,7 @@ const Pricing1 = () => {
                         <h5 className="title"><Link href="page-pricing">Brow Lamination + Tint</Link></h5>
                         <div className="text">Lamination with color enhancement</div>
                       </div>
-                      <span className="price">$95</span>
+                      <span className="price">$100</span>
                     </div>
                   </div>
                 </div>
@@ -93,7 +93,7 @@ const Pricing1 = () => {
                         <h5 className="title"><Link href="page-pricing">Hidragloss 💋</Link></h5>
                         <div className="text">Luxurious lip hydration treatment</div>
                       </div>
-                      <span className="price">$70</span>
+                      <span className="price">$75</span>
                     </div>
                   </div>
                 </div>
@@ -107,7 +107,7 @@ const Pricing1 = () => {
                         <h5 className="title"><Link href="page-pricing">Full face waxing</Link></h5>
                         <div className="text">Complete facial hair removal</div>
                       </div>
-                      <span className="price">$25</span>
+                      <span className="price">$30</span>
                     </div>
                   </div>
                 </div>

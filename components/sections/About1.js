@@ -63,7 +63,7 @@ const About1 = () => {
                     <div className="content">
                     <div className="time-box m-0">
                         <div className="opening-days">Tue–Thu:  </div>
-                        <div className="opening-hours">10:00 AM – 7:00 PM</div>
+                        <div className="opening-hours">10:00 am – 7:00 pm</div>
                       </div>
                       <div className="time-box">
                         <div className="opening-days">Fri: </div>
