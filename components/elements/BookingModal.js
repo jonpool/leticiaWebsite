@@ -64,23 +64,23 @@ const BookingModal = ({ isOpen, onClose }) => {
                             <ul className="services-list">
                                 <li>
                                     <span className="service-name">Eyebrow Design (waxing)</span>
-                                    <span className="service-price">$35</span>
+                                    <span className="service-price">$40</span>
                                 </li>
                                 <li>
                                     <span className="service-name">Eyebrow Design + (henna or tint)</span>
-                                    <span className="service-price">$50</span>
+                                    <span className="service-price">$55</span>
                                 </li>
                                 <li>
                                     <span className="service-name">Brow Lamination</span>
-                                    <span className="service-price">$75</span>
+                                    <span className="service-price">$80</span>
                                 </li>
                                 <li>
                                     <span className="service-name">Brow Lamination + Tint</span>
-                                    <span className="service-price">$95</span>
+                                    <span className="service-price">$100</span>
                                 </li>
                                 <li>
                                     <span className="service-name">Hidragloss 💋</span>
-                                    <span className="service-price">$70</span>
+                                    <span className="service-price">$75</span>
                                 </li>
                                 <li className="more-services">+ More services available</li>
                             </ul>
@@ -90,16 +90,16 @@ const BookingModal = ({ isOpen, onClose }) => {
                             <h4>Business Hours:</h4>
                             <div className="hours-grid">
                                 <div className="day-hours">
-                                    <span className="day">Tue - Wed:</span>
-                                    <span className="hours">8:00 AM - 7:00 PM</span>
+                                    <span className="day">Tue - Thu:</span>
+                                    <span className="hours">10:00 AM - 7:00 PM</span>
                                 </div>
                                 <div className="day-hours">
-                                    <span className="day">Thu:</span>
-                                    <span className="hours">8:00 AM - 6:00 PM</span>
+                                    <span className="day">Fri:</span>
+                                    <span className="hours">10:00 AM - 6:00 PM</span>
                                 </div>
                                 <div className="day-hours">
-                                    <span className="day">Fri - Sat:</span>
-                                    <span className="hours">8:00 AM - 5:00 PM</span>
+                                    <span className="day">Sat:</span>
+                                    <span className="hours">9:00 AM - 3:00 PM</span>
                                 </div>
                                 <div className="day-hours closed">
                                     <span className="day">Sun - Mon:</span>
