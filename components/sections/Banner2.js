@@ -17,7 +17,7 @@ const Banner2 = () => {
         <>
         <section id="home" className="main-slider slider-style-two">
             <div className="slide-item">
-                <div className="bg bg-image" style={{ backgroundImage: 'url(/images/main-slider/bg-slider2-1.png)' }}></div>
+                <div className="bg bg-image" style={{ backgroundColor: 'white' }}></div>
                 <div className="auto-container content-box">
                   <span className="sub-title">Professional Styling Since 2020</span>
                   <h1 className="title">The Essence <br/> Of Beauty</h1>
